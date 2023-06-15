@@ -156,8 +156,11 @@ footer {
     }
     .footer-margin{
       margin-top: -80px;
-
     }
+    .container {
+      grid-gap: 0px 15px;
+    }
+    
   }
 }
 
