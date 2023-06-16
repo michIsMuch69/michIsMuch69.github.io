@@ -166,7 +166,7 @@ footer {
       grid-column: 1 / span 3;
       grid-row: 3;
       height: 100px;
-      background: url("./couv/CONTACTSITE2023.jpg") no-repeat center/cover;
+      background: url("CONTACTSITE2023.jpg") no-repeat center/cover;
       background-size: 50%;
     
     }
