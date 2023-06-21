@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("LOGOSITE2023.jpg") no-repeat center/40%;
+  background: url("LOGOSITE2023.jpg");
   height: 120px;
   background-size: 32%;
 }
