@@ -13,8 +13,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 0px 0px;
   max-width: 1200px;
-  margin: 0px 35px;
- margin-left: 140px;
+ padding-left: 130px;
   flex: 1;
 }
 
@@ -46,6 +45,7 @@ header {
   width: fit-content;
   height: fit-content;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
