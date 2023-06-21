@@ -1,3 +1,4 @@
+/* Réinitialisation */
 body {
   margin: 0;
   padding: 0;
@@ -5,16 +6,18 @@ body {
   min-height: 100vh;
 }
 
+/* Conteneur principal */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 0px 0px;
   max-width: 1200px;
-  margin: 0px 35px;
+ padding-left: 130px;
   flex: 1;
 }
 
+/* En-tête */
 header {
   margin: 25px 0;
   grid-column: 1 / span 3;
@@ -27,6 +30,7 @@ header {
   background-size: 32%;
 }
 
+/* Livres */
 .book1,
 .book2,
 .book3,
@@ -36,7 +40,10 @@ header {
   position: relative;
 }
 
+/* Zones cliquables */
 .area {
+  width: fit-content;
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
@@ -44,6 +51,7 @@ header {
   margin-bottom: 60px;
 }
 
+/* Images des livres */
 img {
   display: block;
   width: 249px;
@@ -58,6 +66,7 @@ img {
   margin-right: 0;
 }
 
+/* Effet de survol sur les images des livres */
 .book1:hover img,
 .book2:hover img,
 .book3:hover img,
@@ -67,6 +76,7 @@ img {
   border-color: rgba(128, 128, 128, 0.616);
 }
 
+/* Pseudo-éléments pour l'effet de survol */
 .book1:hover:before,
 .book2:hover:before,
 .book3:hover:before,
@@ -83,6 +93,7 @@ img {
   background-position: center center;
 }
 
+/* Pied de page */
 footer {
   grid-column: 1 / span 3;
   grid-row: 3;
@@ -91,14 +102,15 @@ footer {
   background-size: 70%;
 }
 
+/* Marge pour le pied de page */
 .footer-margin {
   background-size: 55%;
   background-position: top;
 }
 
 /* Media Queries */
-/* Pour les écrans jusqu'à 720px de large */
-/* Pour les écrans jusqu'à 720px de large */
+
+/* Écrans jusqu'à 720px de large */
 @media only screen and (max-width: 720px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -118,8 +130,7 @@ footer {
   }
 }
 
-
-/* Pour les écrans jusqu'à 780px de large */
+/* Écrans jusqu'à 780px de large */
 @media only screen and (max-width: 780px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -166,44 +177,44 @@ footer {
     margin-left: 25px;
   }
 }
-  /* Media Query pour l'orientation portrait */
-  @media only screen and (orientation: portrait) {
-    img {
-      width: 70%;
-    }
-    .area {
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-      height: fit-content;
-      margin-bottom: 0%;
-    }
-    header {
-      background-size: 60%;
-    }
-    footer {
-      background-position: top;
-    }
-    .container {
-      margin-top: 1px;
-      margin-bottom: 1px;
-      grid-template-rows: 170px 170px 170px;
-      grid-gap: 0px 30px;
-    }
-    .book1,
-    .book3,
-    .book5 {
-      justify-content: right;
-    }
-    .book2,
-    .book4,
-    .book6 {
-      justify-content: left;
-    }
+
+/* Orientation portrait */
+@media only screen and (orientation: portrait) {
+  img {
+    width: 70%;
   }
+  .area {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    margin-bottom: 0%;
+  }
+  header {
+    background-size: 60%;
+  }
+  footer {
+    background-position: top;
+  }
+  .container {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    grid-template-rows: 170px 170px 170px;
+    grid-gap: 0px 30px;
+  }
+  .book1,
+  .book3,
+  .book5 {
+    justify-content: right;
+  }
+  .book2,
+  .book4,
+  .book6 {
+    justify-content: left;
+  }
+}
 
-
-/* Pour les écrans jusqu'à 900px de large en mode paysage */
+/* Écrans jusqu'à 900px de large en mode paysage */
 @media only screen and (orientation: landscape) and (max-width: 900px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -230,4 +241,3 @@ footer {
     margin: 0 35px; /* Ajout de l'espacement horizontal */
   }
 }
-
