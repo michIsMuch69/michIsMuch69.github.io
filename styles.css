@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("LOGOSITE2023.jpg");
+  background: url("./couv/LOGOSITE2023.jpg") no-repeat center;
   height: 120px;
   background-size: 32%;
 }
@@ -87,7 +87,7 @@ footer {
   grid-column: 1 / span 3;
   grid-row: 3;
   height: 100px;
-  background: url("CONTACTSITE2023.jpg") no-repeat center/cover;
+  background: url("./couv/CONTACTSITE2023.jpg") no-repeat center/cover;
   background-size: 70%;
 }
 
@@ -98,6 +98,26 @@ footer {
 
 /* Media Queries */
 /* Pour les écrans jusqu'à 720px de large */
+/* Pour les écrans jusqu'à 720px de large */
+@media only screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+
+  .book1,
+  .book2,
+  .book3,
+  .book4,
+  .book5,
+  .book6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
 
 /* Pour les écrans jusqu'à 780px de large */
 @media only screen and (max-width: 780px) {
