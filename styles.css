@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Conteneur principal */
@@ -38,6 +37,8 @@ header {
 .book5,
 .book6 {
   position: relative;
+  width: 100%;
+  max-width: 249px;;
 }
 
 /* Zones cliquables */
@@ -110,25 +111,7 @@ footer {
 
 /* Media Queries */
 
-/* Écrans jusqu'à 720px de large */
-@media only screen and (max-width: 720px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
-  }
 
-  .book1,
-  .book2,
-  .book3,
-  .book4,
-  .book5,
-  .book6 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-}
 
 /* Écrans jusqu'à 780px de large */
 @media only screen and (max-width: 780px) {
@@ -239,5 +222,45 @@ footer {
     height: auto;
     max-width: 100%;
     margin: 0 35px; /* Ajout de l'espacement horizontal */
+  }
+}
+/* Écrans jusqu'à 720px de large */
+@media only screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px 20px;
+  }
+
+  .book1,
+  .book2,
+  .book3,
+  .book4,
+  .book5,
+  .book6 {
+    width: 100%;
+    height: auto;
+  }
+  .area{
+    margin-bottom: 0px;
+  }
+}
+/* Écrans entre 780px et 900px de large */
+@media only screen and (min-width: 780px) and (max-width: 900px) {
+  .container {
+    grid-gap: 20px 20px;
+    padding-left: 0; /* Supprime la marge gauche */
+    max-width: none; /* Supprime la largeur maximale */
+  }
+
+  .book1,
+  .book2,
+  .book3,
+  .book4,
+  .book5,
+  .book6 {
+    margin: 0; /* Supprime les marges horizontales */
+    width: 100%;
+    max-width: none; /* Supprime la largeur maximale */
   }
 }
