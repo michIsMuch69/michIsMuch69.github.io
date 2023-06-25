@@ -7,6 +7,8 @@ body {
 
 /* Conteneur principal */
 .container {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -24,7 +26,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("LOGOSITE2023.jpg") no-repeat center;
+  background: url("./couv/LOGOSITE2023.jpg") no-repeat center;
   height: 120px;
   background-size: 32%;
 }
@@ -99,7 +101,7 @@ footer {
   grid-column: 1 / span 3;
   grid-row: 3;
   height: 100px;
-  background: url("CONTACTSITE2023.jpg") no-repeat center/cover;
+  background: url("./couv/CONTACTSITE2023.jpg") no-repeat center/cover;
   background-size: 70%;
 }
 
@@ -246,10 +248,9 @@ footer {
   }
 }
 /* Écrans entre 780px et 900px de large */
-@media only screen and (min-width: 780px) and (max-width: 900px) {
+@media only screen and (min-width: 720px) and (max-width: 900px) {
   .container {
     grid-gap: 20px 20px;
-    padding-left: 0; /* Supprime la marge gauche */
     max-width: none; /* Supprime la largeur maximale */
   }
 
