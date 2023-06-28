@@ -162,13 +162,7 @@ footer {
     margin-left: 25px;
   }
 }
-/* Orientatiom paysage */
-@media only screen and (orientation: landscape) {
-  .container {
-    grid-gap: 20px 20px;
-    max-width: none; /* Supprime la largeur maximale */
-  }
-}
+
 /* Orientation portrait */
 @media only screen and (orientation: portrait) {
   img {
