@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("LOGOSITE2023.jpg") no-repeat center;
+  background: url("./couv/LOGOSITE2023.jpg") no-repeat center;
   height: 120px;
   background-size: 33%;
 }
@@ -101,7 +101,7 @@ footer {
   grid-column: 1 / span 3;
   grid-row: 3;
   height: 100px;
-  background: url("CONTACTSITE2023.jpg") no-repeat center/cover;
+  background: url("./couv/CONTACTSITE2023.jpg") no-repeat center/cover;
   background-size: 70%;
 }
 
@@ -162,7 +162,13 @@ footer {
     margin-left: 25px;
   }
 }
-
+/* Orientatiom paysage */
+@media only screen and (orientation: landscape) {
+  .container {
+    grid-gap: 20px 20px;
+    max-width: none; /* Supprime la largeur maximale */
+  }
+}
 /* Orientation portrait */
 @media only screen and (orientation: portrait) {
   img {
