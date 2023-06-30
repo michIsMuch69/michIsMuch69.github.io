@@ -302,6 +302,9 @@ footer {
   .book4,
   .book5,
   .book6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% - 30px);
     height: auto;
     max-width: 100%;
