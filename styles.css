@@ -369,7 +369,7 @@ footer {
     grid-row: 1;
     position: static;
     margin: 0;
-    background-size: 40%;
+    background-size: contain;
     height: 10vh;
     z-index: 9999;
   }
