@@ -26,9 +26,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("LOGOSITE2023.jpg") no-repeat center;
+  background: url("./couv/LOGOSITE2023.jpg") no-repeat center;
   height: 120px;
-  background-size: 33%;
+  background-size: 32% auto;
 }
 
 /* Livres */
@@ -101,13 +101,13 @@ footer {
   grid-column: 1 / span 3;
   grid-row: 3;
   height: 100px;
-  background: url("CONTACTSITE2023.jpg") no-repeat center/cover;
+  background: url("./couv/CONTACTSITE2023.jpg") no-repeat center/cover;
   background-size: 70%;
 }
 
 /* Marge pour le pied de page */
 .footer-margin {
-  background-size: 40%;
+  background-size: 45%;
   background-position: top;
 }
 
@@ -327,8 +327,8 @@ footer {
 @media only screen and (min-width: 720px) and (max-width: 900px) and (orientation: landscape) {
   /* Styles spécifiques pour le mode paysage des tablettes */
   .container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 20px 70px;
     align-items: center;
     justify-items: center;
@@ -349,6 +349,10 @@ footer {
     height: auto;
     max-width: 100%;
     margin: 0 35px; /* Ajout de l'espacement horizontal */
+  }
+  .footer-margin{
+    background-size: 60%;
+    margin-top: 40px;
   }
 }
 
